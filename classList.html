@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Elements using Javascript</title>
+    <style>
+        .card{
+            margin: 2rem;
+            padding: 2rem;
+            background-color: lightseagreen;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      let container = document.querySelector("#container");
+      let card = document.createElement("div");
+        card.classList.add("card");
+      container.appendChild(card);
+      card.textContent="added card";
+    </script>
+  </body>
+</html>
